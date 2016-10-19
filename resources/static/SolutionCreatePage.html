@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Solution Create Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/kedb.css">
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/solutioncreatepage.js"></script>
+</head>
+<style>
+body
+{font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8757A8;
+}
+
+ul.tab li {float: left;}
+
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+</style>
+<body>
+<ul class="tab">
+<li><a href="#" >Home</a></li>
+  <li><a href="#" >Tickets</a></li>
+  
+  
+  <li>
+  <div class="dropdown">
+  <button class="dropbtn">Solution</button>
+  <div class="dropdown-content">
+    <a href="#">Create</a>
+    <a href="#">Approve</a>
+    </div>
+</div>
+</li>
+  
+ 
+  <li><a href="#" >Search</a></li>
+  <li><a href="#" >Administration</a></li>
+ <li><a href="#" >Reports</a></li>
+</ul>
+
+<table border="1" width="100%">
+<tr>
+<td>
+   <table border="1" width="100%">
+   <tr>
+   <th bgcolor="lightblue">Input Parameters</th>
+   <th bgcolor="lightblue"></th>
+   </tr>
+   <tr>
+   <td>Solution ID</td>
+   <td><input type="text" class="form-control" name="solutionID" id="solutionID" size="75" >
+   <!-- Xyz (String 20 chars)(to be auto generated) --></td>
+   
+   </tr>
+   <tr>
+   <td>Description</td>
+   <td><input type="text" class="form-control" name="descriptionID" id="descriptionID" size="75" >
+   <!-- ABC(String 512)(Textbox to be entered by user) --></td>
+   </tr>
+   <tr>
+   <td>Key Words</td>
+   <td><textarea rows="4" cols="50" id="keywordID" name="searchKeyword"></textarea></td>
+   </tr>
+   <tr>
+   <td>Technology</td>
+   <td><input type="text" class="form-control" name="technology" id="technologyID" size="75" ><!-- GHJ (String 20)(user entry) --></td>
+   </tr>
+   <tr>
+   <td>Linked Incidents</td>
+   <td><textarea rows="4" cols="50" id="linkedIncidentID"></textarea><!-- List of incidentsto which the solution is linked, while creating newly it is empty --></td>
+   </tr>
+   <tr>
+   <td>Application Category</td>
+   <td><select id="categoryID">
+   <option value="1">Policy</option>
+   <option value="2">claims</option>
+   <option value="3">Billing</option>
+   <option value="4">Sales</option>
+   </select><!-- Dropdown;(Policy, claims, Billing,Sales) --></td>
+   </tr>
+   <tr>
+   <td>Attachments</td>
+   <td><input type="file" class="form-control" size="50" ><!-- Option to upload files --></td>
+   </tr>
+   </table>
+</td>
+</tr>
+
+<tfoot>
+   <tr>
+      <td align="center">
+        <button id="saveBtn" type="button">Save</button>
+      </td>
+   </tr>
+</tfoot>
+</table>
+
+</body>
+</html>

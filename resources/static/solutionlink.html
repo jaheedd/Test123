@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Solution Linking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/kedb_new.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="/css/jquery.datetimepicker.css">
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/solutionlink.js"></script>
+</head>
+<body style="padding-top:50px; padding-bottom:50px;">
+<div class="header"></div>
+	<!-- Below is shift Data screen -->
+	<div class="container-fluid" id="searchSolutionFrame"
+		style="max-width: 900px">
+		<div class="panel panel-primary">
+		<ul class="kedbtab">
+<li><a id="homelink" href="#" >Home</a></li>
+  <li><a id="ticketslink" href="#" >Tickets</a></li>
+  <li>
+  <div class="kedbdropdown">
+  <button class="dropbtn">Solution</button>
+  <div class="kedbdropdown-content">
+    <a id="creatorlink" href="#">Create</a>
+    <a id="approvelink" href="#">Approve</a>
+    </div>
+</div>
+</li>
+  <li><a id="searchlink" href="#" >Search</a></li>
+  <li><a id="administrationlink" href="#" >Administration</a></li>
+ <li><a id ="reportslink"href="#" >Reports</a></li>
+</ul>
+		<div>
+		</div>
+			<div class="panel-heading">
+				<h5 class="text-center">
+					<span class="glyphicon glyphicon-triangle-user"></span> Solution Link
+				</h5>
+			</div>
+			<div class="panel-body">
+		
+				<div class="row" id="searchTopPanel">
+					<div class="col-sm-12">								
+						<form class="form">
+							<div id="searchPanel">
+								<div class="form-group">
+									<label for="categorystatus" class="label label-info">Category(Select one) :</label> 
+										<select class="form-control_kedb" id="categorystatus" name="categorystatus">
+										<option value="">Select One</option>
+									</select>
+		
+									<label for="ticketstatus" class="label label-info">*
+										Ticket Status (select one):</label> <select class="form-control_kedb"
+										id="ticketstatus" name="ticketstatus">
+										<option value="">Select One</option>
+									</select>
+								</div>
+								<div class="form-group">
+								
+									<label for="ticketnum" class="label label-info">Ticket Number</label>
+									<input type="text" class="form-control_kedb" name="ticketnum" id="ticketnum">
+									<label for="ticketsummary" class="label label-info">Ticket Summary</label>
+									<input type="text" class="form-control_kedb" name="ticketsummary" id="ticketsummary">
+									<button type="button" class="btn btn-success"
+										id="searchButton">Search</button>
+								</div>
+							
+							</div>
+						</form>
+					</div>	
+				</div>
+				<div class="row" id="solutionSearchResults">
+				<div class="panel-body cvzPanelBorder">
+														<h4 class="text-center cvzSectionHeader"><span class="glyphicon glyphicon-inbox"></span> Search Results</h4>
+														<div class="panel panel-primary" id="panel_div">
+														<div class="table-responsive">				
+																<table class="table table-striped table-bordered" id="searchResultsTable">
+																		<tr><td class="tdHeader">Ticket#</td>
+																			<td class="tdHeader">Ticket Summary</td><td class="tdHeader">Application Category</td><td class="tdHeader">Status</td><td class="tdHeader">Open Date</td><td class="tdHeader">Close Date</td>
+																			<td class="tdHeader">Relevancy</td><td class="tdHeader">Solution Id</td>
+																		</tr>
+																
+																</table>
+															</div>
+														
+														</div>
+														</div>				
+													
+													
+									</div>
+								
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+
+
+
+ul.kedbtab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8757A8;
+}
+
+ul.kedbtab li {float: left;}
+
+
+ul.kedbtab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+
+
+.kedbdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.kedbdropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.kedbdropdown-content a {
+    color: black;
+    padding: 6px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.kedbdropdown-content a:hover {background-color: #f1f1f1}
+
+.kedbdropdown:hover .dropdown-content {
+    display: block;
+}
+
+.kedbdropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
